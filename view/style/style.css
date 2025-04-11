@@ -1,0 +1,522 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 90%;
+    margin: auto;
+    font-size: 62%;
+}
+
+html {
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+    color: #c03a3a;
+}
+
+.header img{
+    width: 100%;
+    height: 40vh;
+}
+
+main.main {
+    width: 100%;
+    margin-top: 4px;
+}
+
+.section {
+    width: 100%;
+    display: flex;
+    margin-top: 4px;
+}
+
+nav.type {
+    width: 20%;
+}
+
+.nav a {
+    font-size: .8rem;
+    margin: 2px;
+}
+
+main.product {
+    /* width: 30%; */
+    /* margin: auto; */
+}
+
+.container-product {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.items {
+    width: calc(33.33% - 14px);
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.items:hover {
+    transform: translateY(-5px);
+}
+
+.items img {
+    width: 200px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.items img:hover {
+    transform: scale(1.05);
+}
+
+.items {
+    width: calc(33.33% - 14px);
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    background: white;
+    margin-bottom: 20px;
+}
+
+.item-name {
+    display: block;
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.item-sellingPrice {
+    display: block;
+    color: #c03a3a;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.item-costPrice {
+    display: block;
+    color: #999;
+    text-decoration: line-through;
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+.item-year {
+    display: block;
+    color: #666;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+/* Xem sản phẩm */
+td, th{
+    font-size: 0.7rem;
+    padding: 2px;
+}
+
+table.table-product {
+    width: 100%;
+    text-align: center;
+    margin-top: 3px;
+}
+
+.title-page {
+    text-align: center;
+    margin-bottom:8px;
+}
+
+.form-main {
+    width: 100%;
+    font-size: 0.75rem;
+}
+
+.form-input {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.form-input input {
+    width: 62%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 4px;
+}
+
+/* Admin table styles */
+.title-page {
+    margin: 20px 0;
+    color: #333;
+}
+
+.table-product {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.table-product th, 
+.table-product td {
+    padding: 12px;
+    text-align: center;
+}
+
+.table-product th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+    color: #333;
+}
+
+.table-product tr:hover {
+    background-color: #f9f9f9;
+}
+
+.table-product td form {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.table-product button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.table-product button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    margin: 2px 0;
+    width: 80%;
+    text-align: center;
+}
+
+.table-product button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.table-product form[name="formDelete"] button {
+    background-color: #f44336;
+    color: white;
+    margin: 2px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.table-product form[name="formDelete"] button:hover {
+    background-color: #da190b;
+}
+
+.main .product {
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 80%;
+}
+
+.main .type {
+    width: 20%;
+    padding: 20px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.type h2 {
+    color: #2c3e50;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #4CAF50;
+}
+
+.type a {
+    display: block;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    color: #495057;
+    background: white;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    border-left: 3px solid transparent;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.type a:hover {
+    background: #e8f5e9;
+    color: #2e7d32;
+    border-left: 3px solid #4CAF50;
+    transform: translateX(5px);
+}
+
+.type a.active {
+    background: #4CAF50;
+    color: white;
+    border-left: 3px solid #2e7d32;
+    font-weight: 500;
+}
+
+.section {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.btn {
+    padding: 8px;
+    font-size: 0.55rem;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-form {
+    text-align: right;
+}
+
+.btn-reset {
+    background-color: #f44336;
+}
+
+.btn-submit {
+    background-color: #4CAF50;
+}
+
+.search-container {
+    margin: 10px 0;
+    text-align: right;
+}
+
+.search-container input[type="text"] {
+    width: 300px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 0.8rem;
+}
+
+.btn-search {
+    padding: 8px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.btn-search:hover {
+    background-color: #45a049;
+}
+
+.no-results {
+    text-align: center;
+    color: #666;
+    margin: 20px 0;
+    font-size: 1.1rem;
+}
+
+/* Login and Register Form Styles */
+.auth-container {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.auth-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+
+.auth-container .input-form {
+    margin-bottom: 20px;
+}
+
+.auth-container label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.auth-container input[type="text"],
+.auth-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    background-color: white;
+    cursor: pointer;
+}
+
+.auth-container input[type="password"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.auth-container input[type="submit"],
+.auth-container input[type="reset"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.auth-container input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    margin-right: 10px;
+}
+
+.auth-container input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.auth-container input[type="reset"] {
+    background-color: #f44336;
+    color: white;
+}
+
+.auth-container input[type="reset"]:hover {
+    background-color: #da190b;
+}
+
+.auth-container .button-group {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Common Button Styles */
+.btn-edit,
+.btn-delete {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: white;
+    transition: all 0.3s ease;
+    width: 80px;
+    margin: 4px;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.btn-edit {
+    background-color: #2196F3;
+    box-shadow: 0 2px 4px rgba(33, 150, 243, 0.2);
+}
+
+.btn-edit:hover {
+    background-color: #1976D2;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(33, 150, 243, 0.3);
+}
+
+.btn-delete {
+    background-color: #f44336;
+    box-shadow: 0 2px 4px rgba(244, 67, 54, 0.2);
+}
+
+.btn-delete:hover {
+    background-color: #d32f2f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(244, 67, 54, 0.3);
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 8px;
+}
+
+/* Remove conflicting table button styles */
+.table-product button[type="submit"],
+.table-product form[name="formDelete"] button {
+    width: auto;
+    margin: 0;
+}
+
+.product-image {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.image-upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.current-image {
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.image-upload-container input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+}
+
+.image-upload-container input[type="file"]::-webkit-file-upload-button {
+    background: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.image-upload-container input[type="file"]::-webkit-file-upload-button:hover {
+    background: #45a049;
+}
